@@ -733,6 +733,7 @@ p {
   border: 1px solid var(--white-color);
   resize: none;
   background-color: transparent;
+  color: var(--white-color);
 }
 
 .portfolio-section .input-field:focus {
@@ -817,6 +818,7 @@ p {
   border: 1px solid var(--white-color);
   resize: none;
   background-color: transparent;
+  color: var(--white-color);
 }
 
 .input-wrapper-subscribe .input-field:focus {
@@ -842,8 +844,16 @@ p {
   margin: 10px;
 }
 
+.icon-footer a i {
+  border: 1px solid var(--white-color);
+  padding: 4px;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+
 .icon-footer a i:hover {
-  color: var(--blue-color-3);
+  background-color: var(--white-color);
+  color: var(--bg-3);
   transition: 0.2s ease-in-out;
 }
 
