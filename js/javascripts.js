@@ -28,6 +28,20 @@ window.onscroll = function () {
   layer_5.style.transform = "translateY(" + Y / 3 + "px)";
 };
 
+const elemToggleFunc = function (elem) {
+  elem.classList.toggle("active");
+};
+
+const header = document.querySelector("[data-header]");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 10) {
+    header.classList.add("active");
+  } else {
+    header.classList.remove("active");
+  }
+});
+
 // ========== Next Img ========== //
 var swiper = new Swiper(".portofolio-swiper", {
   slidesPerView: 3,
@@ -107,3 +121,4 @@ animationObserver = new IntersectionObserver(animateSkillProgress, {
 window.addEventListener("scroll", startAnimationOnScroll);
 
 window.addEventListener("beforeunload", resetAnimation);
+

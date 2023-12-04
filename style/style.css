@@ -115,6 +115,7 @@ p {
 
 /* ========== Navbar Style ========== */
 .navbar-utama {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -123,6 +124,11 @@ p {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  transition: 0.25s ease-in-out;
+}
+
+.navbar-utama.active {
+  padding-block: 22px;
   background-color: transparent;
   backdrop-filter: blur(55px);
   box-shadow: var(--shadow-2);
